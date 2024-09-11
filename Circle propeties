@@ -1,0 +1,13 @@
+# Circle properties program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def circle_area(diameter):
+  radius = diameter/2
+  area = 3.14 * (radius*radius)
+  return(area)
+
+# -------------------------
+# Main program
+# -------------------------
