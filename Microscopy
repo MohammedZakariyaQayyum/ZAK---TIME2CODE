@@ -1,0 +1,17 @@
+# Microscopy program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def magnification(actual_size, image_size):
+  mag = (image_size * 10000) / actual_size
+  return(mag)
+
+
+# -------------------------
+# Main program
+# -------------------------
+actual_size = int(input("Enter the actual size in micrometers: "))
+image_size = int(input("Enter the image size in centimeters"))
+mag = magnification(actual_size, image_size)
+print("The magnification is", mag ,"X")
