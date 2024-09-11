@@ -1,0 +1,13 @@
+# Hello World program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def output():
+    print("Hello world.")
+    print("This is my first program made in sixth form.")
+    
+# -------------------------
+# Main program
+# -------------------------
+output()
