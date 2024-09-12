@@ -1,0 +1,21 @@
+# HTTP status codes program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def http_status(status):
+  if status == 400:
+    return("Bad request")
+  elif status == 401 or 403:
+    return("Authentication error")
+  elif status == 404:
+    return("Not Found")
+  else:
+    return("Unknown error")
+
+
+# -------------------------
+# Main program
+# -------------------------
+code = int(input("Enter 3 digit code: "))
+print(http_status(code))
