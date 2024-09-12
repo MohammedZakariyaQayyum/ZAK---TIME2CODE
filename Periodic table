@@ -1,0 +1,17 @@
+# Periodic table program
+
+# -------------------------
+# Subprograms
+# -------------------------
+
+def periodic_table(element):
+  if element = "lithium" or "L":
+    list = ["L","Lithium","6.94","Alkali Metals"]
+  
+  
+  print("Symbol:",list(1))
+
+
+# -------------------------
+# Main program
+# -------------------------
