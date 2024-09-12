@@ -1,0 +1,21 @@
+# Nitrate program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def calculate_dose(nitrate):
+  if nitrate > 10:
+    carbon = 3
+  elif 10> nitrate > 2.5:
+    carbon = 2
+  elif nitrate <= 1:
+    carbon = 0.5
+  return(carbon)
+
+# -------------------------
+# Main program
+# -------------------------
+
+nitrate = float(input("Enter the nitrate dose as a decimal number: "))
+carbon_dose = calculate_dose(nitrate)
+print("For", nitrate, "nitrate dose there is", carbon_dose, "ml of carbon.")
