@@ -1,1 +1,19 @@
+# Energy bill calculator program
 
+# -------------------------
+# Subprograms
+# -------------------------
+def energy_cost(previous_meter_reading,current_meter_reading,calofiric_value):
+  units_used = current_meter_reading - previous_meter_reading
+  kilowatt_hours = units_used * 1.022 * (calofiric_value/3.6)
+  cost = int(0.0284 * kilowatt_hours)
+  return(cost)
+
+# -------------------------
+# Main program
+# -------------------------
+previous_meter_reading = int(input("Enter previous meter reading as a 4 digit number: "))
+current_meter_reading = int(input("Enter current meter reading as a 4 digit number: "))
+calofiric_value = int(39.3)
+cost = energy_cost(previous_meter_reading,current_meter_reading,calofiric_value)
+print("Your total energy cost is: £",cost)
