@@ -1,0 +1,20 @@
+# Valid month program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def validate_month(month):
+  if 1 <= month <= 12:
+    return(True)
+  else:
+    return(False)
+
+
+# -------------------------
+# Main program
+# -------------------------
+valid_month = False
+while not valid_month:
+  month = int(input("Enter the number of a month: "))
+  valid_month = validate_month(month)
+print("Thank you. Input accepted.")
