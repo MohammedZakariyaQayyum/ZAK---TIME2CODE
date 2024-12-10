@@ -1,0 +1,26 @@
+# Exam grade program
+
+# -------------------------
+# Subprograms
+# -------------------------
+
+def compound(target,current,interest):
+  met = False
+  year = 0
+  interest = interest/100
+  while not met:
+    year = year + 1
+    amount = int(current * interest)
+    current = current + amount
+    print("Year",year,": £",current)
+    if current >= target:
+      met = True
+  
+
+# -------------------------
+# Main program
+# -------------------------
+current_balance = int(input("Enter the balance to the nearest pound:"))
+interest_rate = int(input("Enter the % interest rate:"))
+target_balance = int(input("Enter the target balance to the nearest pound:"))
+compound(target_balance,current_balance,interest_rate)
