@@ -1,0 +1,48 @@
+# This program will generate lyrics for a personalised Jingle Bells carol.
+
+# ----------------
+# Constants
+# ----------------
+
+BELL_ASCII_ART = """			   			  		
+				   _,--._
+                                 ,'  _.._`.
+                            ,^.,' ,-" _," ;
+                   _,----.._\\|( _/,--"  ,<
+                 ,'     ____(_))< ___..".  `.
+                :  _,-"__,-" (_)-.      ,\\.  \
+                :,'..-"  _,-")|(\\ `._.-"_,\\  \
+                 `.__ ,-"    '-`'   \\.-"   Y  :
+                 /  /:-...______...-:      |  |
+                (  ( |-...______...-'      ;  ;_
+                 \\ ,\\|              |     /,^/  ;._
+                  `  .              .        _,'   ;
+                     :              :    _,-'    ,"
+                     '              ` ,-'     _,"
+                    '                '    _,-"`.
+                   ;`--...______,,,--":.-"     ;
+                  :                    :  `..."
+                  '---....______,,,,---'
+                           :     ;
+                            `.,."          
+"""
+
+# ----------------
+# Subprograms
+# ----------------
+
+def gen_lyrics(noun,animal,place,verb):
+  carol = ("Jingle bells, jingle bells, jingle all the way! Dashing through the",noun,"On a one-"+animal+"-open-sleighO'er the",place,"we go"+verb+" all the way.")
+  return(carol)
+
+# ----------------
+# Main program
+# ----------------
+print(BELL_ASCII_ART)
+print("Welcome to the Jingle Bell project! This program will generate your very own version of 'Jingle Bells' for you!")
+noun = str(input("enter a noun"))
+animal = str(input("enter an animal"))
+place = str(input("enter a place"))
+verb = str(input("enter a verb"))
+song = gen_lyrics(noun,animal,place,verb)
+print(song)
